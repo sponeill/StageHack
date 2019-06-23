@@ -782,7 +782,7 @@ border: 2px solid #fff;
 	padding:35px 0 35px;
 }
 .footer-logo{
-	margin:15px auto 35px;
+	margin:15px auto 0px;
 	width: 76px;
 }
 .copyright, .credits{
@@ -879,5 +879,11 @@ border: 2px solid #fff;
 
 .tech-logos {
 	width: 100px;
-	
+}
+
+.title-logo {
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.title-logo span{
+	color: #7cc576 !important;
 }
