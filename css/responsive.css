@@ -9,7 +9,7 @@
 	.service-list{ margin-bottom:30px;}
 	.c-logo-part ul li{ margin:0 15px;}
 	.form{ margin:0 0 0 20px}
-	.main-nav{ display:block !important; }
+	/* .main-nav{ display:block !important; } */
 	/*.portfolioContainer{ width:800px; margin:0px auto !important; } */
 
 }
@@ -34,13 +34,23 @@
 	.contact-info-box{ margin:0 ;}
 	.social-link{ margin:0;}
 
-	.main-nav{ display:block !important; }
+	/* .main-nav{ display:block !important; } */
 	.main-nav li a{ padding:8px 15px;}
 	/*.portfolioContainer{ width:750px; margin:0px auto !important; }
 	.Portfolio-box{ height:250px;}*/
 
 
 
+}
+
+/* Collapse Nav Earlier Than Originally Written */
+@media only screen and (max-width: 1200px) {
+	 .main-nav{ display:none; position:absolute; left:0; width:100%; top:68px; margin:0 auto; float: none; background:#fff; z-index: 99; border-top: 1px solid #eee;}
+	 .res-nav_click{ display:block;}
+	 .main-nav li{ display:block;}
+	.main-nav li.small-logo{ display:none;}
+	.main-nav li a{ display:block; padding:12px 32px; margin: 4px 0; border-bottom: 1px solid #f3f3f3;;}
+	.main-nav li a:hover{color:#7cc576}
 }
 
 @media only screen and (max-width: 767px) {
