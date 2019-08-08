@@ -888,3 +888,7 @@ border: 2px solid #fff;
 .title-logo span{
 	color: #7cc576 !important;
 }
+
+.portfolio-image {
+	border: 1pt solid #7cc576;
+}
