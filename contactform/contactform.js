@@ -105,10 +105,12 @@ jQuery(document).ready(function($) {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
+          alert("Thank you! Your message has been sent.");
         } else {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");
           $('#errormessage').html(msg.error);
+          alert("There was a problem sending your message. Please try again, or email me directly at shane@stagehacker.com");
         }
 
       }
