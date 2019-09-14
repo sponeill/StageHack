@@ -96,6 +96,7 @@ jQuery(document).ready(function($) {
     }
     $.ajax({
       type: "POST",
+      crossDomain: true,
       url: action,
       datatype: "json",
       data: str,
