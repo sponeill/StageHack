@@ -98,9 +98,23 @@ p{
 .header{
 	text-align:center;
 	/* background:url(../img/pw_maze_black_2X.png) left top repeat; */
-	background: url(../img/desk-background-2.jpg);
+	background: url(../img/blue.jpg);
+	background-size: cover;
 	padding:280px 0 125px 0;
+	height: 100vh;
 }
+
+/* Add Filter over Background Image */
+/* #header:before {
+	content: "";
+	background: rgba(6, 12, 34, 0.589);
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+  } */
+
 .logo{
 	width:130px;
 	margin:0 auto 35px;
