@@ -97,15 +97,15 @@ p{
 
 .header{
 	text-align:center;
-	/* background:url(../img/pw_maze_black_2X.png) left top repeat; */
-	background: url(../img/blue.jpg);
+	background:url(../img/close-up-of-wooden-plank-326311.jpg);
+	/* background: url(../img/blue.jpg); */
 	background-size: cover;
 	padding:280px 0 125px 0;
 	height: 100vh;
 }
 
 /* Add Filter over Background Image */
-/* #header:before {
+#header:before {
 	content: "";
 	background: rgba(6, 12, 34, 0.589);
 	position: absolute;
@@ -113,7 +113,7 @@ p{
 	top: 0;
 	left: 0;
 	right: 0;
-  } */
+  }
 
 .logo{
 	width:130px;
@@ -368,9 +368,9 @@ color: #fff;
 .Portfolio-box{
 	text-align:center;
 	margin-bottom:30px;
-	height:350px;
+	/* height:350px; */
 	width:350px;
-	overflow:hidden;
+	overflow: hidden;
 	float:left;
 	padding:0;
 }
@@ -416,7 +416,8 @@ img {
 /* Clients
 ---------------------------------*/
 .client-part{
-	background:url(../img/section-bg1.jpg) center center no-repeat;
+	/* background:url(../img/section-bg1.jpg) center center no-repeat; */
+	background: #595d74;
 	background-size:cover;
 	padding:55px 0;
 	text-align:center;
@@ -480,7 +481,7 @@ border: 2px solid #fff;
 
 .c-logo-part{
 	background:#7cc576;
-	padding:25px 0;
+	padding:5px 0;
     filter: alpha(opacity=60);
 }
 .c-logo-part ul{
@@ -611,8 +612,9 @@ border: 2px solid #fff;
 /* Talk Business
 ---------------------------------*/
 .business-talking{
-	background:url(../img/section-bg2.jpg) top center no-repeat;
+	/* background:url(../img/close-up-of-wooden-plank-326311.jpg) top center no-repeat; */
 	background-size:cover;
+	background: #595d74;
 	padding:60px 0 10px;
 	text-align:center;
 }
@@ -792,13 +794,14 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-	background:url(../img/footer.jpg) left top repeat;
+	/* background:url(../img/close-up-of-wooden-plank-326311.jpg) left top repeat; */
 	/* background:url(../img/wood-background.jpg); */
+	background: #595d74;
 	padding:35px 0 35px;
 }
 .footer-logo{
 	margin:15px auto 0px;
-	width: 76px;
+	width: 150px;
 }
 .copyright, .credits{
 	color:#cccccc;
@@ -906,3 +909,9 @@ border: 2px solid #fff;
 .portfolio-image {
 	border: 1pt solid #7cc576;
 }
+
+.nav-item {
+	min-width: 80px !important;
+	
+}
+
