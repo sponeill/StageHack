@@ -926,3 +926,9 @@ border: 2px solid #fff;
 	justify-content: center;
 	align-items: center;
 }
+
+@media(max-width: 500px) {
+	.hero-logo {
+		margin-top: 55%;
+	}
+}
