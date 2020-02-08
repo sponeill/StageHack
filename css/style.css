@@ -927,6 +927,10 @@ border: 2px solid #fff;
 	align-items: center;
 }
 
+.promo-code {
+	max-height: 55vh;
+}
+
 @media(max-width: 500px) {
 	.hero-logo {
 		margin-top: 55%;
