@@ -700,6 +700,9 @@ border: 2px solid #fff;
 .facebook a:hover {
 	background: #3b5998;
 }
+.email a:hover {
+	background: #7cc576;
+}
 .pinterest a:hover {
 	background: #cb2026;
 }
