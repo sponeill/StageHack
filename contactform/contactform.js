@@ -90,10 +90,10 @@ jQuery(document).ready(function($) {
     });
     if (ferror) return false;
     else var str = $(this).serialize();
-    var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'https://formspree.io/mewdgeam';
-    }
+    // var action = $(this).attr('action');
+    // if( ! action ) {
+    //   action = 'https://formspree.io/mewdgeam';
+    // }
     $.ajax({
       type: "POST",
       crossDomain: true,
