@@ -2,7 +2,9 @@ jQuery(document).ready(function($) {
   "use strict";
 
   //Contact
-  $('form.contactForm').submit(function() {
+  $('form.contactForm').submit(function(e) {
+    e.preventDefault();
+
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
@@ -88,11 +90,10 @@ jQuery(document).ready(function($) {
         i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
-    if (ferror) return false;
+    if (ferror) {
+      return false; 
+    }
     else {
-      $("#contact-form").submit(function(e) {
-        e.preventDefault();
-      
         var $form = $(this);
         $.post($form.attr("action"), $form.serialize()).then(function() {
           alert("Thank you!");
