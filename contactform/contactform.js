@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
     });
     if (ferror) return false;
     else {
-      $("contact-form").submit(function(e) {
+      $("#contact-form").submit(function(e) {
         e.preventDefault();
       
         var $form = $(this);
