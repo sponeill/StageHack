@@ -89,34 +89,34 @@ jQuery(document).ready(function($) {
       }
     });
     if (ferror) return false;
-    else var str = $(this).serialize();
-    // var action = $(this).attr('action');
-    // if( ! action ) {
-    //   action = 'https://formspree.io/mewdgeam';
-    // }
-    $.ajax({
-      type: "POST",
-      crossDomain: true,
-      url: action,
-      datatype: "json",
-      data: str,
-      success: function(msg) {
-        // alert(msg);
-        if (msg.ok) {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
-          alert("Thank you! Your message has been sent.");
-        } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg.error);
-          alert("There was a problem sending your message. Please try again, or email me directly at shane@stagehacker.com");
-        }
+    // else var str = $(this).serialize();
+    // // var action = $(this).attr('action');
+    // // if( ! action ) {
+    // //   action = 'https://formspree.io/mewdgeam';
+    // // }
+    // $.ajax({
+    //   type: "POST",
+    //   crossDomain: true,
+    //   url: action,
+    //   datatype: "json",
+    //   data: str,
+    //   success: function(msg) {
+    //     // alert(msg);
+    //     if (msg.ok) {
+    //       $("#sendmessage").addClass("show");
+    //       $("#errormessage").removeClass("show");
+    //       $('.contactForm').find("input, textarea").val("");
+    //       alert("Thank you! Your message has been sent.");
+    //     } else {
+    //       $("#sendmessage").removeClass("show");
+    //       $("#errormessage").addClass("show");
+    //       $('#errormessage').html(msg.error);
+    //       alert("There was a problem sending your message. Please try again, or email me directly at shane@stagehacker.com");
+    //     }
 
-      }
-    });
-    return false;
+    //   }
+    // });
+    // return false;
   });
 
 });
