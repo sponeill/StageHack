@@ -98,8 +98,6 @@ jQuery(document).ready(function($) {
         $.post($form.attr("action"), $form.serialize()).then(function() {
           alert("Thank you!");
         });
-      });
     }
   });
-
 });
