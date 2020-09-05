@@ -39,6 +39,8 @@
 </head>
 
 <body>
+	<div id="load" style="background-color: white; width: 100%; height: 100%; z-index:9999;position: fixed;">
+	<img src="img/ButtonLogo_SmallVersion.png" id="loading-icon"></div>
 	<header class="header" id="header">
 		<div class="container">
 			<figure class="animated fadeInDown delay-07s hero-logo">
@@ -625,6 +627,8 @@ http://www.stagehacker.com -->
 	<script>
 
 		$(document).ready(function () {
+			setTimeout(hideLoader, 2000);
+
 			$('.testimonials').slick({
 				autoplay: true,
 				arrows: false,
@@ -633,6 +637,10 @@ http://www.stagehacker.com -->
 				autoplaySpeed: 15000,
 			});
 		})
+
+		function hideLoader() {
+			$('#load').hide();
+		}
 	</script>
 
 </body>
@@ -645,6 +653,22 @@ http://www.stagehacker.com -->
 
 	.slick-dots li.slick-active button:before {
 		color: #7cc576 !important;
+	}
+
+	#loading-icon {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 	}
 </style>
 
